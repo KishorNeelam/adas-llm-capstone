@@ -1,3 +1,6 @@
+## System Diagram
+![ADAS AI Architecture](adas_ai_system.png)
+
 # ADAS AI System Architecture
 
 This document describes a high-level AI-based ADAS architecture used in modern automotive systems,
