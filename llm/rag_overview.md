@@ -31,3 +31,18 @@ Retrieval-Augmented Generation ensures:
 - Answers come only from approved documents
 - Reduced hallucinations
 - Better auditability
+
+## Safety and Governance Considerations
+
+LLMs are non-deterministic and may generate incorrect information.
+
+Key risks:
+- Hallucinations
+- Overconfident responses
+- Out-of-date knowledge
+
+Mitigation in this project:
+- Retrieval restricted to approved documents
+- No internet access
+- Deterministic response temperature
+- Clear refusal behavior when context is missing
