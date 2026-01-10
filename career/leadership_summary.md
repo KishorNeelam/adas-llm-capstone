@@ -1,9 +1,10 @@
-# AI Leadership Summary
+## AI Safety Leadership Perspective
 
-This document explains how this project would be led in a real organization.
+In a real organization, AI-based ADAS systems require:
 
-## Key Responsibilities
-- Technical decision-making
-- Risk management
-- Vendor evaluation
-- Stakeholder communication
+- Cross-functional collaboration between AI, safety, and hardware teams
+- Clear Operational Design Domain (ODD) definition
+- Controlled use of LLMs for internal assistance only
+- Strong governance to comply with ISO 26262, SOTIF, and emerging EU AI Act
+
+The focus is on risk reduction and trust, not AI novelty.
