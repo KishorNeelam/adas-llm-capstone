@@ -1,0 +1,39 @@
+# ADAS & LLM – Senior Interview Talking Points
+
+## Q1: Can AI perception be made fully safe?
+No. AI perception is probabilistic and cannot guarantee 100% correctness.
+Safety is achieved at the system level using redundancy, monitoring, and fallback
+mechanisms, not model accuracy alone.
+
+---
+
+## Q2: Why is sensor fusion mandatory in ADAS?
+Single-sensor systems fail silently.
+Sensor fusion improves robustness, enables cross-validation, and supports
+functional safety arguments.
+
+---
+
+## Q3: How does ISO 26262 apply to AI?
+ISO 26262 covers systematic and hardware faults but assumes deterministic behavior.
+AI challenges this assumption, which is why SOTIF is essential alongside ISO 26262.
+
+---
+
+## Q4: Why use RAG instead of fine-tuning LLMs?
+RAG restricts knowledge to approved sources, reduces hallucinations, and improves
+auditability—critical for automotive environments.
+
+---
+
+## Q5: Can we use ChatGPT directly in ADAS development?
+Not directly.
+Public LLMs lack traceability, data control, and safety guarantees.
+LLMs should be restricted to internal, non-safety-critical assistance.
+
+---
+
+## Q6: What is your role as a technical leader in AI projects?
+My role is to balance innovation with risk, ensure cross-functional alignment,
+define clear boundaries for AI usage, and maintain compliance with safety and
+regulatory standards.
