@@ -1,16 +1,29 @@
 """
-Simple RAG pipeline example for automotive internal use.
-This code is illustrative and focuses on architecture, not performance.
+Illustrative RAG pipeline for automotive internal use.
+Focus: safety, governance, and controlled knowledge access.
 """
 
 def retrieve_documents(query):
-    return ["Relevant internal ADAS document section"]
+    """
+    Retrieve information only from approved internal sources.
+    """
+    approved_docs = [
+        "ADAS requirements document",
+        "Safety concept description",
+        "Test strategy overview"
+    ]
+    return approved_docs
 
 def generate_answer(context, query):
-    return f"Answer based only on provided context: {context}"
+    """
+    Generate answer strictly based on retrieved context.
+    """
+    if not context:
+        return "Insufficient approved information to answer this query."
+    return f"Answer generated using approved context: {context}"
 
 query = "Explain AEB failure scenarios"
-docs = retrieve_documents(query)
-answer = generate_answer(docs, query)
+context = retrieve_documents(query)
+answer = generate_answer(context, query)
 
 print(answer)
